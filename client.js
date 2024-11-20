@@ -9,6 +9,7 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log("Game starts now!")
+    conn.write("Name: GUS")
   });
 
   conn.on("data", (data) => {
