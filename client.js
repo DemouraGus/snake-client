@@ -8,8 +8,9 @@ const connect = function () {
   });
 
   conn.on("connect", () => {
-    console.log("Game starts now!")
-    conn.write("Name: GUS")
+    console.log("Game starts now!");
+    conn.write("Name: GUS");
+    // conn.write("Move: up");
   });
 
   conn.on("data", (data) => {
